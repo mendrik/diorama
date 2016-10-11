@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "feather-ts": "npm:feather-ts"
+  }
+}

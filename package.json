@@ -1,0 +1,30 @@
+{
+  "name": "diorama",
+  "version": "1.0.0",
+  "description": "An image layout algorithm for fixed areas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "node scripts/pack.js",
+    "watch:diorama": "node node_modules/typescript/lib/tsc.js -w -d -p tsconfig.json",
+    "build": "node node_modules/typescript/lib/tsc.js -d -p tsconfig.json && npm run pack",
+    "server": "node scripts/server.js"
+  },
+  "keywords": [
+    "image",
+    "layout",
+    "algorithm",
+    "gallery",
+    "pictures"
+  ],
+  "author": "Andreas Prudzilko",
+  "license": "ISC",
+  "dependencies": {
+    "feather-ts": "^1.0.56",
+    "screenfull": "^3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "uglify-js": "^2.7.3"
+  }
+}
