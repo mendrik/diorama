@@ -114,6 +114,6 @@ module diorama {
     export function start(...imgs: string[]) {
         feather.start()
         images = imgs
-        singleton.addImages(images.slice(0, 6))
+        singleton.addImages(images.slice(0, 8))
     }
 }
