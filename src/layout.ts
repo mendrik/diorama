@@ -2,7 +2,7 @@
 
 module diorama {
 
-    export type Millisconds = number
+    export type Milliseconds = number
 
     export interface Node {
         x: number,
@@ -122,7 +122,7 @@ module diorama {
         width: number,
         height: number,
         aspectRatios: number[],
-        searchTime: Millisconds) {
+        searchTime: Milliseconds) {
 
         const BIG = 999999999
 
