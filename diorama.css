@@ -13,7 +13,6 @@ body {
 }
 
 .diorama {
-    transform: translate3d(0, 0, 0);
     width: calc(100% - 1px);
     height: calc(100% - 1px);
 }
@@ -39,9 +38,8 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-sizing: border-box;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    transform: translate3d(0, 0, 0);
+    border-top: 0.9px solid white;
+    border-left: 0.9px solid white;
 }
 
 .diorama.crop > ul > li {

@@ -97,6 +97,9 @@ module diorama {
                 tiles       = this.tiles,
                 tile,
                 positions   = diorama.searchSolution(w, h, tiles.map(tile => tile.aspectRatio), 300)
+            while (!positions) {
+                positions   = diorama.searchSolution(w, h, tiles.map(tile => tile.aspectRatio), 100)
+            }
             requestAnimationFrame(() => {
                 positions.forEach(p => {
                     tile    = tiles[p.index]
