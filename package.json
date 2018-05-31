@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pack": "node scripts/pack.js",
-    "watch:diorama": "node node_modules/typescript/lib/tsc.js -w -d -p tsconfig.json",
-    "build": "node node_modules/typescript/lib/tsc.js -d -p tsconfig.json && npm run pack",
-    "server": "node scripts/server.js"
+    "start": "parcel src/index.html -d docs --no-hmr"
   },
   "keywords": [
     "image",
@@ -20,11 +17,14 @@
   "author": "Andreas Prudzilko",
   "license": "ISC",
   "dependencies": {
-    "feather-ts": "^1.0.56",
-    "screenfull": "^3.0.2"
+    "@feather-ts/feather-ts": "2.0.93",
+    "parcel": "1.8.1",
+    "preact": "8.2.9",
+    "screenfull": "3.3.2"
   },
   "devDependencies": {
-    "typescript": "^2.0.3",
-    "uglify-js": "^2.7.3"
+    "tslint": "^5.10.0",
+    "typescript": "2.8.4",
+    "uglify-js": "3.3.28"
   }
 }

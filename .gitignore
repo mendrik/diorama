@@ -45,3 +45,4 @@ feather-lnk
 *.iml
 
 gallery
+.cache

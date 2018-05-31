@@ -1,31 +1,22 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "pretty": true,
-    "sourceMap": true,
-    "sourceRoot" : "/",
-    "inlineSources": true,
-    "noImplicitAny": false,
-    "declaration": false,
-    "noEmitOnError": false,
-    "noEmitHelpers": true,
-    "removeComments": true,
-    "rootDir": "./",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "target": "es5",
     "experimentalDecorators": true,
-    "out": "dist/diorama.js"
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "traceResolution": true,
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "jsx": "react",
+    "jsxFactory": "h"
   },
-  "files": [
-    "src/tile.ts",
-    "src/layout.ts",
-    "src/diorama.ts"
-  ],
   "exclude": [
-    ".",
-    "feather-lnk",
-    "typings",
-    "node_modules",
-    "jspm_packages",
-    "test/**/*.spec.ts"
+    "dist",
+    "node_modules"
   ]
 }
