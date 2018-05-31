@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html -d docs --no-hmr"
+    "start": "parcel src/index.html --no-hmr",
+    "build": "parcel build src/index.html -d docs --public-url=/diorama/"
   },
   "keywords": [
     "image",
