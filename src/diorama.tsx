@@ -24,7 +24,7 @@ export class Diorama extends Component<DioramaProps, DioramaState> {
         this.state = {
             showCrop: false,
             tileProps: [],
-            images: 6
+            images: 9
         }
     }
 
@@ -32,58 +32,6 @@ export class Diorama extends Component<DioramaProps, DioramaState> {
         this.calculatePositions()
         window.addEventListener('resize', () => this.calculatePositions())
     }
-    /*
-
-        tiles: Tile[] = []
-        resizing = false
-
-        init(el: Element) {
-            singleton = this;
-            render(this, el)
-        }
-
-        addImages(urls: string[]) {
-            this.tiles.push.apply(this.tiles, urls.map(url => new Tile(url)))
-        }
-
-        @Subscribe('tile-loaded')
-        tileLoaded() {
-            let loadedTiles = this.tiles.reduce((p, c) => p + (c.aspectRatio ? 1 : 0), 0)
-            if (loadedTiles === this.tiles.length) {
-                this.calculatePositions()
-                this.resizing = false
-            }
-        }
-
-        @On({event: 'click', selector: 'button.calc'})
-        recalc() {
-            this.calculatePositions()
-        }
-
-        @On({event: 'click', selector: 'button.add-image'})
-        add() {
-            if (this.tiles.length < images.length) {
-                this.tiles.push(new Tile(images[this.tiles.length]))
-            }
-        }
-
-        @On({event: 'click', selector: 'button.del-image'})
-        del() {
-            if (this.tiles.length > 5 && !this.resizing) {
-                this.tiles.pop()
-                this.calculatePositions()
-            }
-        }
-
-        @On({event: 'click', selector: 'button.crop-toggle'})
-        showCrop() {
-            this.element.classList.toggle('crop')
-        }
-
-        @On({event: 'click', selector: 'button.fullscreen'})
-    */
-
-
 
     calculatePositions() {
         if (this.resizing) {
