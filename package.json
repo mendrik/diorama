@@ -15,7 +15,7 @@
     "gallery",
     "pictures"
   ],
-  "author": "Andreas Prudzilko",
+  "author": "Andreas Herd",
   "license": "ISC",
   "dependencies": {
     "@feather-ts/feather-ts": "2.0.93",
