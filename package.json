@@ -15,7 +15,7 @@
     "gallery",
     "pictures"
   ],
-  "author": "Andreas Prudzilko",
+  "author": "Andreas Herd",
   "license": "ISC",
   "dependencies": {
     "parcel": "1.8.1",
