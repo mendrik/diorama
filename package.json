@@ -18,7 +18,6 @@
   "author": "Andreas Prudzilko",
   "license": "ISC",
   "dependencies": {
-    "@feather-ts/feather-ts": "2.0.93",
     "parcel": "1.8.1",
     "preact": "8.2.9",
     "screenfull": "3.3.2"
