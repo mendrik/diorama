@@ -1,4 +1,8 @@
-# diorama
+## [Demo](https://mendrik.github.io/diorama/)
+
+Resize your browser window or rotate your mobile device to see full layout effect
+
+# Diorama
 
 An image layout algorithm that distributes a set of images into a fixed sized rectangle. Please note that the algorithm is heuristic and works best, when there is a sufficient amount of images to find a good solution, usually 5 or more images. 
 
