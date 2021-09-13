@@ -2,11 +2,13 @@
   "name": "diorama",
   "version": "1.0.0",
   "description": "An image layout algorithm for fixed areas",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html --no-hmr",
-    "build": "parcel build src/index.html -d docs --public-url=/diorama/"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir=docs --public-url=/diorama/",
+    "bundle-docs": "rollup -c",
+    "minify": "uglifyjs --compress -o dist/diorama.min.js -- dist/diorama.js",
+    "deploy": "npm-run-all bundle-docs minify"
   },
   "keywords": [
     "image",
@@ -18,13 +20,19 @@
   "author": "Andreas Herd",
   "license": "ISC",
   "dependencies": {
-    "parcel": "1.8.1",
-    "preact": "8.2.9",
-    "screenfull": "3.3.2"
+    "preact": "10.5.14",
+    "screenfull": "5.1.0"
   },
   "devDependencies": {
-    "tslint": "^5.10.0",
-    "typescript": "2.8.4",
-    "uglify-js": "3.3.28"
+    "@parcel/validator-typescript": "next",
+    "npm-run-all": "^4.1.5",
+    "parcel": "next",
+    "prettier": "^2.4.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "4.4.3",
+    "uglify-js": "3.14.2"
   }
 }

@@ -1,22 +1,17 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es5",
+    "target": "ES6",
     "experimentalDecorators": true,
+    "jsxImportSource": "preact",
     "noImplicitAny": false,
     "sourceMap": true,
-    "traceResolution": true,
+    "isolatedModules": true,
     "lib": [
       "dom",
       "esnext"
     ],
     "jsx": "react",
     "jsxFactory": "h"
-  },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  }
 }
