@@ -27,7 +27,8 @@ export default {
         compilerOptions: {
           module: 'ES2015',
           target: 'es5',
-          declaration: true
+          declaration: true,
+          jsxImportSource: ''
         },
         exclude: ['src/diorama.tsx', 'src/images.ts', 'src/start.tsx', 'src/tile.tsx'],
         clean: true
