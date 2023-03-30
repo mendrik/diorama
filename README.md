@@ -1,3 +1,7 @@
+## New version
+
+-> https://github.com/mendrik/diorama-2023
+
 ## [Demo](https://mendrik.github.io/diorama/)
 
 Resize your browser window or rotate your mobile device to see full layout effect
